@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    text-align: center;
+    background-color: #212121; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+}
+
+/* Estilo para reconocer símbolos y caracteres especiales del español */
+body, input, button {
+    font-family: "Arial", "Helvetica", sans-serif; /* Usar una fuente que admita símbolos y caracteres especiales */
+}
+h1 {
+    font-size: 24px;
+    margin: 20px;
+}
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #303030; /* Fondo oscuro */
+    border: 1px solid #484848; /* Borde oscuro */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    background-color: #424242; /* Fondo de entrada oscuro */
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+div.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:#303030; /* Botones de operación naranja */
+    color: #FF5722;
+    transition: background-color 0.2s;
+}
+
+button.boton-numeros {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:#303030; /* Botones de operación naranja */
+    color:  #fff;
+    transition: background-color 0.2s;
+}
+button.boton-igual {
+    padding: 10px 20px;
+    background-color:  #FF5722; /* Fondo blanco para el botón igual */
+    color: #fff; /* Texto naranja para el botón igual */
+}
+
+button:hover {
+    background-color: #FF7043; /* Color de botón naranja más claro al pasar el cursor */
+}

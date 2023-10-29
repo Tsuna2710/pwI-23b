@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BUSQUEDA AVANZADA</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+<body>
+    <div class="menu">
+        <a href="index.html">BUSQUEDA SIMPLE</a>
+        <a href="images.html">BUSUEDA DE IMAGENES</a>
+        <a href="advanced.html">BUSQUEDA AVANZADA</a>
+    </div>
+    <div class="google-search-container advanced-search-box">
+        <img src="unsa.png" alt="Google Logo">
+            <form action="cgi-bin/search-avanced.cgi" method="GET">
+            <label for="todas_estas_palabras"><b>LAS PALABRAS:</b></label>
+            <input type="text" name="todas_estas_palabras" id="todas_estas_palabras" placeholder="Separadas por espacios"><br>
+            
+            <label for="frase_exacta"><b>ESTA PALABRA O FRASE EXACTA:</b></label>
+            <input type="text" name="frase_exacta" id="frase_exacta" placeholder="Palabra o frase exacta"><br>
+            
+            <label for="ninguna_de_estas_palabras"><b>NINGUNA DE ESTAS PALABRAS:</b></label>
+            <input type="text" name="ninguna_de_estas_palabras" id="ninguna_de_estas_palabras" placeholder="Separadas por espacios"><br>
+            
+            <input type="submit" value="Buscar en Google">
+        </form>
+    </div>
+
+</body>
+</html>

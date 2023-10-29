@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calcular Promedio de Notas</title>
+    <link rel="stylesheet" href="css/estilo.css"> 
+</head>
+<body>
+    <div class="container"> <!-- Contenedor principal -->
+        <h1>Ingrese las notas separadas por comas</h1>
+        <form action="cgi-bin/calcular_promedio.cgi" method="post">
+            <input type="text" name="notas" placeholder="Ejemplo: 12, 15, 17, 14" required>
+            <input type="submit" value="Calcular Promedio" class="btn"> <!-- Aplicamos el estilo del botón -->
+        </form>
+    </div>
+</body>
+</html>

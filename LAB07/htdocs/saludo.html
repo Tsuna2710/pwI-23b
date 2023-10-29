@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saludo Personalizado</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container"> <!-- Contenedor principal -->
+        <h1>Ingrese su nombre</h1>
+        <form action="cgi-bin/saludo.cgi" method="post">
+            <input type="text" name="nombre" placeholder="Su nombre" required>
+            <input type="submit" value="Saludar" class="btn"> <!-- Aplicamos el estilo del botón -->
+        </form>
+    </div>
+</body>
+</html>
+

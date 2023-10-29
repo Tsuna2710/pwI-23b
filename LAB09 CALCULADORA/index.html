@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora Web</title>
+    <link rel="stylesheet" type="text/css" href="/css/stylescal.css">
+</head>
+<body>
+    <h1>Calculadora Web</h1>
+    <form action="cgi-bin/calculadora.cgi" method="POST">
+        <input type="text" name="expresion" id="expresion" readonly>
+        <div class="botones">
+            <button type="button" onclick="limpiarTodo()">AC</button>
+            <button type="button" onclick="agregarCaracter('(')">(</button>
+            <button type="button" onclick="agregarCaracter(')')">)</button>
+            <button type="button" onclick="borrarUltimoCaracter()">&larr;</button>
+            <button type="button" class="boton-numeros" onclick="agregarCaracter('7')">7</button>
+            <button type="button" class="boton-numeros" onclick="agregarCaracter('8')">8</button>
+            <button type="button" class="boton-numeros" onclick="agregarCaracter('9')">9</button>
+            <button type="button" onclick="agregarCaracter('+')">+</button>
+            <button type="button" class="boton-numeros" onclick="agregarCaracter('4')">4</button>
+            <button type="button" class="boton-numeros" onclick="agregarCaracter('5')">5</button>
+            <button type="button" class="boton-numeros" onclick="agregarCaracter('6')">6</button>
+            <button type="button" onclick="agregarCaracter('-')">-</button>
+            <button type="button" class="boton-numeros" onclick="agregarCaracter('1')">1</button>
+            <button type="button" class="boton-numeros" onclick="agregarCaracter('2')">2</button>
+            <button type="button" class="boton-numeros" onclick="agregarCaracter('3')">3</button>
+            <button type="button" onclick="agregarCaracter('*')">*</button>
+            <button type="button" class="boton-numeros" onclick="agregarCaracter('0')">0</button>
+            <button type="button" onclick="agregarCaracter('.')">.</button>
+            <button type="button" onclick="agregarCaracter('/')">/</button>
+            <button type="submit" id="igual" class="boton-igual">=</button>
+        </div>
+        
+
+    </form>
+
+    <script>
+        function agregarCaracter(caracter) {
+            document.getElementById('expresion').value += caracter;
+        }
+
+        function borrarUltimoCaracter() {
+            var expresion = document.getElementById('expresion').value;
+            document.getElementById('expresion').value = expresion.slice(0, expresion.length - 1);
+        }
+
+        function limpiarTodo() {
+            document.getElementById('expresion').value = '';
+        }
+    </script>
+</body>
+</html>
