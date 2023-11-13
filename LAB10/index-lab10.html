@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta de Universidades Licenciadas</title>
+    <link rel="stylesheet" href="css/styles-lab10.css">
+</head>
+<body>
+    <h1>Consulta de Universidades Licenciadas</h1>
+    <form action="cgi-bin/consulta.cgi" method="post">
+        <label for="nombre_universidad">Nombre Universidad:</label>
+        <input type="text" name="nombre_universidad" required><br>
+
+        <label for="periodo_licenciamiento">Periodo Licenciamiento:</label>
+        <input type="text" name="periodo_licenciamiento" required><br>
+
+        <label for="departamento_local">Departamento Local:</label>
+        <input type="text" name="departamento_local" required><br>
+
+        <label for="denominacion_programa">Denominación Programa:</label>
+        <input type="text" name="denominacion_programa" required><br>
+
+        <input type="submit" value="Buscar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif; 
+    text-align: center;
+    background-color: #212121; 
+    color: #fff; 
+}
+
+
+body, input, button {
+    font-family: "Arial", "Helvetica", sans-serif; 
+}
+h1 {
+    font-size: 24px;
+    margin: 20px;
+}
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #303030; 
+    border: 1px solid #484848; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    background-color: #424242; 
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+div.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:#303030; 
+    color: #FF5722;
+    transition: background-color 0.2s;
+}
+
+button.boton-numeros {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:#303030; 
+    color:  #fff;
+    transition: background-color 0.2s;
+}
+button.boton-igual {
+    padding: 10px 20px;
+    background-color:  #FF5722; 
+    color: #fff; 
+}
+
+button:hover {
+    background-color: #FF7043; 
+}

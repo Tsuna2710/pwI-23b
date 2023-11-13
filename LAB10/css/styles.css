@@ -1,0 +1,111 @@
+body {
+    background-color: #fff;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu {
+    background-color: #600718;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.google-search-container {
+    
+    
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.search-box {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 24px;
+
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+/* Estilos para la búsqueda avanzada */
+.advanced-search-box {
+    background-color: #fff;
+    color: #600718;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Espacio adicional arriba del formulario avanzado */
+     text-align: center;
+}
+
+/* Estilos para los campos del formulario avanzado */
+.advanced-search-box input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid  #600718;
+    border-radius: 4px;
+
+    width: 100%;
+}
+
+/* Estilos para el botón de búsqueda en el formulario avanzado */
+.advanced-search-box input[type="submit"] {
+    background-color:  #600718;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.advanced-search-box input[type="submit"]:hover {
+    background-color: #357ae8;
+}
+
+
+#q {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 24px;
+    outline: none;
+}
+
+button {
+    background-color: #fff;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+button img {
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+}
